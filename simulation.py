@@ -161,7 +161,7 @@ it's time to go for a walk in the park")
             else:
                 print("Well, now I feel much better and I can go study!")
                 self.current_state = "STUDY"
-        sleep(1)
+        # sleep(1)
         self.print_vital_signs()
 
     def run_simulation(self, hours):
