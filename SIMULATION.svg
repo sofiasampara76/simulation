@@ -1,0 +1,190 @@
+<svg width="736" height="578" viewBox="0 0 552 433.5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="translate(73.6354358949534,177.36526664894956) scale(0.17308885999040746)">
+<title>finite_state_machine</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-404.76 2090.8,-404.76 2090.8,4 -4,4"/>
+<!-- 0 -->
+
+<!-- 2 -->
+<g id="node1" class="node">
+<title>STOP</title>
+<ellipse fill="none" stroke="black" cx="2048.15" cy="-176.96" rx="34.65" ry="34.65"/>
+<ellipse fill="none" stroke="black" cx="2048.15" cy="-176.96" rx="38.65" ry="38.65"/>
+<text text-anchor="middle" x="2048.15" y="-172.76" font-family="Helvetica,Arial,sans-serif" font-size="14.00">STOP</text>
+</g>
+<!-- 0&#45;&gt;2 -->
+<g id="node3" class="node">
+<title>EAT</title>
+<ellipse fill="none" stroke="black" cx="386.5" cy="-163.96" rx="29.81" ry="29.81"/>
+<text text-anchor="middle" x="386.5" y="-159.76" font-family="Helvetica,Arial,sans-serif" font-size="14.00">EAT</text>
+</g><g id="edge3" class="edge">
+<title>SLEEP-&gt;SLEEP</title>
+<path fill="none" stroke="black" d="M18.73,-233.53C15.05,-248.28 23.91,-261.43 45.3,-261.43 60.85,-261.43 69.77,-254.49 72.08,-245.04"/>
+<polygon fill="black" stroke="black" points="75.58,-244.98 71.9,-235.05 68.58,-245.11 75.58,-244.98"/>
+<text text-anchor="middle" x="45.3" y="-265.63" font-family="Helvetica,Arial,sans-serif" font-size="14.00">hour 23:00-6:00</text>
+</g><g id="edge19" class="edge">
+<title>SLEEP-&gt;STOP</title>
+<path fill="none" stroke="black" d="M50.85,-243.23C56.87,-276.27 70.78,-322.01 102.78,-346.96 202.7,-424.9 258.77,-383.96 385.5,-383.96 385.5,-383.96 385.5,-383.96 1636.87,-383.96 1789.19,-383.96 1942.52,-268.82 2010.63,-210.28"/>
+<polygon fill="black" stroke="black" points="2012.89,-212.96 2018.13,-203.75 2008.29,-207.68 2012.89,-212.96"/>
+<text text-anchor="middle" x="906.61" y="-388.16" font-family="Helvetica,Arial,sans-serif" font-size="14.00">energy = 0 or hunger = 10 or stress = 10</text>
+</g>
+<!-- 1 -->
+<g id="edge1" class="edge">
+<title>SLEEP-&gt;EAT</title>
+<path fill="none" stroke="black" d="M75.91,-178.79C84.1,-173.22 93.35,-168.11 102.78,-165.16 186.09,-139.1 290.1,-148.67 345.83,-156.94"/>
+<polygon fill="black" stroke="black" points="345.05,-160.36 355.47,-158.44 346.13,-153.45 345.05,-160.36"/>
+<text text-anchor="middle" x="191.35" y="-169.16" font-family="Helvetica,Arial,sans-serif" font-size="14.00">hour 7:00 and hunger &gt;= 7</text>
+</g>
+<!-- 0&#45;&gt;1 -->
+<g id="node4" class="node">
+<title>STUDY</title>
+<ellipse fill="none" stroke="black" cx="1149.69" cy="-249.96" rx="43.23" ry="43.23"/>
+<text text-anchor="middle" x="1149.69" y="-245.76" font-family="Helvetica,Arial,sans-serif" font-size="14.00">STUDY</text>
+</g>
+<!-- 3 -->
+<g id="edge2" class="edge">
+<title>SLEEP-&gt;STUDY</title>
+<path fill="none" stroke="black" d="M54.09,-242.93C61.66,-269.6 76.09,-303.08 102.78,-319.96 188.83,-374.39 920.66,-347.79 1019.15,-321.96 1049.67,-313.96 1080.67,-297.1 1104.69,-281.71"/>
+<polygon fill="black" stroke="black" points="1106.5,-284.71 1112.93,-276.3 1102.66,-278.86 1106.5,-284.71"/>
+<text text-anchor="middle" x="581.64" y="-355.16" font-family="Helvetica,Arial,sans-serif" font-size="14.00">else</text>
+</g>
+<g id="node2" class="node">
+<title>SLEEP</title>
+<ellipse fill="none" stroke="black" cx="45.3" cy="-203.96" rx="39.47" ry="39.47"/>
+<text text-anchor="middle" x="45.3" y="-199.76" font-family="Helvetica,Arial,sans-serif" font-size="14.00">SLEEP</text>
+</g><!-- s -->
+
+<!-- SL -->
+<g id="edge4" class="edge">
+<title>EAT-&gt;SLEEP</title>
+<path fill="none" stroke="black" d="M356.91,-169.43C335.72,-173.34 306.1,-178.5 279.92,-181.96 216.81,-190.3 143.71,-196.65 96.32,-200.34"/>
+<polygon fill="black" stroke="black" points="96.06,-196.85 86.36,-201.1 96.59,-203.83 96.06,-196.85"/>
+<text text-anchor="middle" x="191.35" y="-203.16" font-family="Helvetica,Arial,sans-serif" font-size="14.00">hour 23:00-6:00 or energy &lt;= 2</text>
+</g>
+<!-- EAT&#45;&gt;SLEEP -->
+<g id="node5" class="node">
+<title>WALK</title>
+<ellipse fill="none" stroke="black" cx="732.14" cy="-95.96" rx="40" ry="40"/>
+<text text-anchor="middle" x="732.14" y="-91.76" font-family="Helvetica,Arial,sans-serif" font-size="14.00">WALK</text>
+</g><g id="edge6" class="edge">
+<title>EAT-&gt;STUDY</title>
+<path fill="none" stroke="black" d="M410.76,-181.55C431.23,-195.91 462.46,-215.22 493.07,-223.96 709.36,-285.74 982.07,-267.68 1095.47,-256.19"/>
+<polygon fill="black" stroke="black" points="1095.49,-259.71 1105.07,-255.19 1094.76,-252.75 1095.49,-259.71"/>
+<text text-anchor="middle" x="732.14" y="-269.16" font-family="Helvetica,Arial,sans-serif" font-size="14.00">deadline or else</text>
+</g><g id="edge21" class="edge">
+<title style="">EAT-&gt;STOP</title>
+<path fill="none" stroke="black" d="M413.05,-150.11C431.78,-139.09 456.98,-122.32 475.07,-102.96 485.68,-91.6 480.07,-81.5 493.07,-72.96 566.19,-24.91 600.95,-53.34 688.22,-46.96 1050.43,-20.48 1143.51,-7.57 1505.33,-38.96 1723.86,-57.92 1795.64,-25.2 1991.5,-123.96 1999.54,-128.01 2007.21,-133.62 2014.15,-139.67"/>
+<polygon fill="black" stroke="black" points="2011.71,-142.18 2021.4,-146.45 2016.49,-137.07 2011.71,-142.18"/>
+<text text-anchor="middle" x="1149.69" y="-28.16" font-family="Helvetica,Arial,sans-serif" font-size="14.00" style="">energy = 0 or hunger = 10 or stress = 10</text>
+</g>
+<!-- EAT&#45;&gt;W -->
+<!-- EAT&#45;&gt;WALK -->
+<g id="edge5" class="edge">
+<title>EAT-&gt;WALK</title>
+<path fill="none" stroke="black" d="M414.99,-154.68C436.12,-147.85 466.16,-138.81 493.07,-133.16 570.78,-116.84 592.07,-124.02 670.22,-109.96 674.02,-109.28 677.94,-108.51 681.87,-107.7"/>
+<polygon fill="black" stroke="black" points="682.38,-111.17 691.43,-105.65 680.91,-104.33 682.38,-111.17"/>
+<text text-anchor="middle" x="581.64" y="-138.16" font-family="Helvetica,Arial,sans-serif" font-size="14.00">meet a friend or else</text>
+</g>
+
+<!-- S -->
+<g id="edge7" class="edge">
+<title>STUDY-&gt;STUDY</title>
+<path fill="none" stroke="black" d="M1111.93,-271.61C1094.14,-290.78 1106.73,-311.19 1149.69,-311.19 1185.61,-311.19 1200.3,-296.93 1193.76,-281.05"/>
+<polygon fill="black" stroke="black" points="1196.76,-279.24 1188.3,-272.87 1190.94,-283.13 1196.76,-279.24"/>
+<text text-anchor="middle" x="1149.69" y="-315.39" font-family="Helvetica,Arial,sans-serif" font-size="14.00">deadline or else</text>
+</g><g id="edge9" class="edge">
+<title>STUDY-&gt;SLEEP</title>
+<path fill="none" stroke="black" d="M1107.63,-261.27C1082.33,-267.7 1049.11,-275.21 1019.15,-278.96 911.9,-292.38 884.14,-284.4 776.06,-285.96 475.42,-290.29 397.8,-277.98 102.78,-219.96 100.02,-219.42 97.2,-218.81 94.37,-218.15"/>
+<polygon fill="black" stroke="black" points="95.48,-214.82 84.93,-215.79 93.78,-221.61 95.48,-214.82"/>
+<text text-anchor="middle" x="581.64" y="-290.16" font-family="Helvetica,Arial,sans-serif" font-size="14.00">hour 23:00-6:00 or energy &lt;= 2</text>
+</g>
+<!-- STUDY&#45;&gt;STUDY -->
+<g id="node6" class="node">
+<title>RELAX</title>
+<ellipse fill="none" stroke="black" cx="1635.87" cy="-176.96" rx="43.22" ry="43.22"/>
+<text text-anchor="middle" x="1635.87" y="-172.76" font-family="Helvetica,Arial,sans-serif" font-size="14.00">RELAX</text>
+</g><g id="edge10" class="edge">
+<title>STUDY-&gt;EAT</title>
+<path fill="none" stroke="black" d="M1106.47,-245.66C1002.24,-234.96 724.4,-206 493.07,-177.96 471.38,-175.33 447.23,-172.15 427.5,-169.48"/>
+<polygon fill="black" stroke="black" points="428.03,-166.02 417.65,-168.14 427.09,-172.96 428.03,-166.02"/>
+<text text-anchor="middle" x="732.14" y="-214.16" font-family="Helvetica,Arial,sans-serif" font-size="14.00">hunger &gt;= 7</text>
+</g><g id="edge20" class="edge">
+<title>STUDY-&gt;STOP</title>
+<path fill="none" stroke="black" d="M1193.27,-252.02C1218.54,-253.13 1251.21,-254.4 1280.24,-254.96 1380.26,-256.89 1405.43,-260.29 1505.33,-254.96 1613.83,-249.17 1640.5,-241.61 1748.41,-228.96 1856.58,-216.28 1885.81,-224.25 1991.5,-197.96 1994.65,-197.18 1997.86,-196.27 2001.07,-195.28"/>
+<polygon fill="black" stroke="black" points="2002.1,-198.63 2010.48,-192.14 1999.89,-191.99 2002.1,-198.63"/>
+<text text-anchor="middle" x="1635.87" y="-257.16" font-family="Helvetica,Arial,sans-serif" font-size="14.00">energy = 0 or hunger = 10 or stress = 10</text>
+</g>
+<!-- STUDY&#45;&gt;RE -->
+<!-- STUDY&#45;&gt;RELAX -->
+<g id="edge8" class="edge">
+<title>STUDY-&gt;RELAX</title>
+<path fill="none" stroke="black" d="M1188.77,-230.97C1214.05,-219.31 1248.33,-205.3 1280.24,-198.16 1335.86,-185.72 1495.99,-180.19 1580.75,-178.08"/>
+<polygon fill="black" stroke="black" points="1580.76,-181.58 1590.68,-177.84 1580.6,-174.58 1580.76,-181.58"/>
+<text text-anchor="middle" x="1392.78" y="-202.16" font-family="Helvetica,Arial,sans-serif" font-size="14.00">stress &gt;= 7 or feeling bad</text>
+</g>
+
+<!-- e -->
+
+<!-- E -->
+<!-- WALK&#45;&gt;EAT -->
+<g id="edge11" class="edge">
+<title>WALK-&gt;EAT</title>
+<path fill="none" stroke="black" d="M692.95,-87.28C645.01,-78.07 560.84,-67.59 493.07,-89.16 464.3,-98.32 436.64,-118.48 416.85,-135.57"/>
+<polygon fill="black" stroke="black" points="414.61,-132.88 409.47,-142.14 419.26,-138.11 414.61,-132.88"/>
+<text text-anchor="middle" x="581.64" y="-94.16" font-family="Helvetica,Arial,sans-serif" font-size="14.00">hunger &gt;= 7</text>
+</g><g id="edge12" class="edge">
+<title>WALK-&gt;SLEEP</title>
+<path fill="none" stroke="black" d="M695.02,-79.89C687.01,-77.02 678.45,-74.46 670.22,-72.96 592.76,-58.83 571.49,-65.94 493.07,-72.96 317.46,-88.67 257.63,-59.66 102.78,-143.96 93.46,-149.03 84.8,-156.2 77.2,-163.83"/>
+<polygon fill="black" stroke="black" points="74.68,-161.4 70.42,-171.1 79.8,-166.17 74.68,-161.4"/>
+<text text-anchor="middle" x="386.5" y="-86.16" font-family="Helvetica,Arial,sans-serif" font-size="14.00">hour 23:00-6:00 or energy &lt;= 2</text>
+</g><g id="edge18" class="edge">
+<title>WALK-&gt;STOP</title>
+<path fill="none" stroke="black" d="M772.47,-95.06C908.27,-92.37 1369.89,-86.81 1748.41,-124.96 1837.54,-133.94 1940.16,-153.96 1998.97,-166.37"/>
+<polygon fill="black" stroke="black" points="1998.14,-169.77 2008.65,-168.43 1999.6,-162.93 1998.14,-169.77"/>
+<text text-anchor="middle" x="1392.78" y="-111.16" font-family="Helvetica,Arial,sans-serif" font-size="14.00">energy = 0 or hunger = 10 or stress = 10</text>
+</g>
+<!-- WALK&#45;&gt;EAT -->
+
+<g id="edge13" class="edge">
+<title>WALK-&gt;STUDY</title>
+<path fill="none" stroke="black" d="M772.38,-99.88C850.42,-107.7 1017.76,-124.52 1019.15,-125.16 1058.14,-143.24 1092.64,-177.94 1116.22,-206.17"/>
+<polygon fill="black" stroke="black" points="1113.49,-208.37 1122.52,-213.91 1118.92,-203.95 1113.49,-208.37"/>
+<text text-anchor="middle" x="906.61" y="-130.16" font-family="Helvetica,Arial,sans-serif" font-size="14.00">deadline or else</text>
+</g>
+<!-- deadline -->
+<!-- RELAX&#45;&gt;STUDY -->
+<!-- RELAX&#45;&gt;STUDY -->
+<!-- RELAX&#45;&gt;STUDY -->
+<!-- RELAX&#45;&gt;STUDY -->
+<!-- RELAX&#45;&gt;STUDY -->
+<!-- RELAX&#45;&gt;STUDY -->
+<g id="edge14" class="edge">
+<title>RELAX-&gt;STUDY</title>
+<path fill="none" stroke="black" d="M1594.51,-190.92C1569.19,-199.14 1535.7,-209.06 1505.33,-214.96 1490.8,-217.78 1300.01,-235.92 1204.46,-244.92"/>
+<polygon fill="black" stroke="black" points="1204.16,-241.43 1194.53,-245.85 1204.81,-248.4 1204.16,-241.43"/>
+<text text-anchor="middle" x="1392.78" y="-240.16" font-family="Helvetica,Arial,sans-serif" font-size="14.00">deadline or else</text>
+</g><g id="edge15" class="edge">
+<title>RELAX-&gt;EAT</title>
+<path fill="none" stroke="black" d="M1592.23,-176.52C1400.07,-174.51 615.84,-166.34 428.04,-164.38"/>
+<polygon fill="black" stroke="black" points="428.35,-160.89 418.31,-164.28 428.27,-167.89 428.35,-160.89"/>
+<text text-anchor="middle" x="906.61" y="-174.16" font-family="Helvetica,Arial,sans-serif" font-size="14.00">hunger &gt;= 7</text>
+</g><g id="edge16" class="edge">
+<title>RELAX-&gt;SLEEP</title>
+<path fill="none" stroke="black" d="M1602.04,-149.52C1577.16,-130.4 1541.23,-106.2 1505.33,-93.96 1351.35,-41.47 938.59,-37.26 776.06,-30.16 737.06,-28.46 727.22,-28.5 688.22,-30.16 427.32,-41.24 316.19,70.52 102.78,-79.96 78.42,-97.14 64.36,-127.44 56.36,-153.79"/>
+<polygon fill="black" stroke="black" points="53.01,-152.77 53.69,-163.34 59.75,-154.65 53.01,-152.77"/>
+<text text-anchor="middle" x="732.14" y="-35.16" font-family="Helvetica,Arial,sans-serif" font-size="14.00">energy &lt;= 1</text>
+</g><g id="edge17" class="edge">
+<title>RELAX-&gt;STOP</title>
+<path fill="none" stroke="black" d="M1679.23,-176.96C1755.73,-176.96 1916.5,-176.96 1997.82,-176.96"/>
+<polygon fill="black" stroke="black" points="1997.7,-180.46 2007.7,-176.96 1997.7,-173.46 1997.7,-180.46"/>
+<text text-anchor="middle" x="1878.96" y="-181.16" font-family="Helvetica,Arial,sans-serif" font-size="14.00">energy = 0 or hunger = 10 or stress = 10</text>
+</g>
+<!-- RELAX&#45;&gt;STUDY -->
+
+
+
+
+
+
+
+</g>
+</svg>
