@@ -1,7 +1,6 @@
 '''Simulation of one day of student life using FSM'''
 import random
 from queue import Queue
-from time import sleep
 
 class StudentFSM:
     '''
@@ -42,7 +41,7 @@ energy: {self.energy}\n")
         self.print_state()
         event = self.events.get()
         self.events.put(random.choice(["deadline", "feeling bad", "meet a friend", \
-"not an important event", "not an important event2"]))   #added two undefined
+"good weather", "bad weather"]))   #added two undefined
         #events for random events to have smaller probability
 
 
@@ -161,10 +160,9 @@ it's time to go for a walk in the park")
             else:
                 print("Well, now I feel much better and I can go study!")
                 self.current_state = "STUDY"
-        # sleep(1)
         self.print_vital_signs()
 
-    def run_simulation(self, hours):
+    def run_simulation(self, hours=24):
         '''Main loop of the simulation'''
         while self.hour != hours:
 
