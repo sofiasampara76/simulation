@@ -14,14 +14,9 @@ class StudentFSM:
         self.energy = 1
         self.stress = 0
         self.hour = 0
-        self.events = Queue()
-
-        self.generate_random_events()
-
-    def generate_random_events(self):
-        '''Put one random event in a queue of events'''
-        event = random.choice(["deadline", "feeling bad", "meet a friend"])
-        self.events.put(event)
+        self.events = ["deadline", "feeling bad", "meet a friend", \
+        "good weather", "bad weather"] #added two undefined
+        #events for random events to have smaller probability
 
     def print_state(self):
         '''Print the information about current state and the hour'''
@@ -39,11 +34,7 @@ energy: {self.energy}\n")
     def transition(self):
         '''The method, which decides, what state will be next'''
         self.print_state()
-        event = self.events.get()
-        self.events.put(random.choice(["deadline", "feeling bad", "meet a friend", \
-"good weather", "bad weather"]))   #added two undefined
-        #events for random events to have smaller probability
-
+        event = random.choice(self.events)
 
         if self.current_state == "EAT":
             self.hunger = max(0, self.hunger - 6)
@@ -94,12 +85,12 @@ it's time to go for a walk in the park")
             if event == "deadline":
                 self.print_unexpected_event(event)
                 print("Oh no, I must finish the task, the dedline is very soon.")
-            elif self.stress >= 7:
-                print("Time to take a break, because I am too stressed")
-                self.current_state = "RELAX"
             elif self.hour%24 in list(range(0, 7)) + [23]:
                 self.current_state = "SLEEP"
                 print("Ohh, it's very late, time to go to bed!")
+            elif self.stress >= 7:
+                print("Time to take a break, because I am too stressed")
+                self.current_state = "RELAX"
             elif self.energy <= 2:
                 print("I am very exhausted, it's time to take a nap.")
                 self.current_state = "SLEEP"
