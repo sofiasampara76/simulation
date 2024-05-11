@@ -175,4 +175,4 @@ it's time to go for a walk in the park")
             self.hour += 1
 
 student = StudentFSM()
-student.run_simulation(72)
+student.run_simulation()
